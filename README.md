@@ -1,16 +1,17 @@
-# trustpay
+## Trustpay
 
-A new Flutter project.
+## Vision
+TrustPay is a mobile decentralised escrow platform that enables clients and freelancer to perform a trustless transaction using the platform
 
-## Getting Started
+## Description
+TrustPay is an innovative mobile decentralized escrow platform that revolutionizes how clients and freelancers engage in transactions.
 
-This project is a starting point for a Flutter application.
+By leveraging blockchain technology, TrustPay ensures trustless transactions, offering both parties a secure, transparent, and efficient environment.
 
-A few resources to get you started if this is your first Flutter project:
+Built With: This project was built with the following:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter (Mobile Frontend)
+Nestjs (Backend)
+Python ML with Flask
+Fuse Flutter SDK
+Figma - UI design Mockup
