@@ -1,0 +1,179 @@
+name: trustpay
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # get
+  get: ^4.6.6
+  get_storage: ^2.0.3
+  # video player
+  video_player: ^2.6.1
+  # audio player audioplayers: ^1.1.1
+  audioplayers: ^4.0.1
+  # retrofit
+  retrofit: "4.0.1"
+  # cached network image
+  cached_network_image: ^3.2.1
+  # intl
+  intl: ^0.18.0
+  # animated text
+  animated_text_kit: ^4.2.2
+  # time ago
+  timeago: ^3.3.0
+  # tuple
+  tuple: ^2.0.1
+  # share
+  share_plus: ^7.2.2
+  # badges
+  badges: ^2.0.3
+  # permission handler
+  #for utill extensions
+  nb_utils: ^6.0.6
+  # for loader
+  flutter_overlay_loader: ^2.0.0
+  # for loading svg files
+  flutter_svg: ^2.0.5
+  # for network requests
+  dio: ^5.1.2
+  # for oppening url in browser
+  url_launcher: ^6.1.11
+  freezed: ^2.3.5
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.0
+  flutter_riverpod: ^2.3.6
+  google_fonts: ^4.0.4
+  flutter_hooks: ^0.18.6
+  get_it: ^7.6.7
+  auto_route: 7.8.4
+  #flutter_native_splash: ^2.3.5
+  #dots_indicator: ^3.0.0
+  flutter_launcher_icons: 0.13.1
+  dropdown_button2: ^2.3.9
+  dropdown_model_list: ^2.0.1
+  local_auth: ^2.1.8
+  money_formatter: ^0.0.5
+  bottom_sheet: ^4.0.0
+  #wolt_modal_sheet: ^0.4.0
+  country_code_picker: ^3.0.0
+  currency_picker: ^2.0.20
+  pretty_dio_logger: ^1.3.1
+  equatable: ^2.0.5
+  date_picker_plus: ^2.1.0
+  introduction_screen: ^3.1.12
+  toastification: ^1.0.0
+  infinite_scroll_pagination: ^4.0.0
+  pdf: ^3.10.8
+  #esc_pos_utils: ^1.1.0
+  #esc_pos_bluetooth: ^0.4.1
+  #flutter_bluetooth_basic: ^0.1.5
+  flutter_otp_text_field: ^1.1.1
+  otp_text_field: ^1.1.3
+  radio_group_v2: ^3.0.0
+  image_picker: ^1.0.7
+  dropdown_search: ^5.0.6
+  drop_down_search_field: ^1.0.4
+  search_field_autocomplete: ^1.0.0
+  path_provider: ^2.0.5
+  open_file: any
+  sms_autofill: ^2.3.1
+  pin_code_fields: ^8.0.1
+  print_bluetooth_thermal: ^1.1.0
+  printing: ^5.12.0
+  esc_pos_utils_plus: ^2.0.3
+  permission_handler: ^11.3.1
+  fluttercontactpicker: ^4.7.0
+  document_file_save_plus: ^2.0.0
+
+
+
+dependency_overrides:
+  auto_route: 7.8.4
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.5
+  auto_route_generator: 7.3.2
+  retrofit_generator: "7.0.1"
+  flutter_gen_runner:
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/icons/
+    - assets/gifs/
+    - assets/country.json
+    - assets/state.json
+    - assets/city.json
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  #line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    #flare_flutter: true
+    #rive: true
+    
+
+  assets:
+    enabled: true
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icons/app_icon.svg"
+  min_sdk_android: 21
+
+
